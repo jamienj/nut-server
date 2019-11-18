@@ -18,6 +18,7 @@ docker run -d \
     -v $GAMES:/games:rw \
     -e ID=$ID \
     -e PASSWORD=$PASSWORD \
+    -e TIME=$TIME \
     ramdockerapp/nut-server
 ```
 
@@ -26,6 +27,7 @@ Where:
 - $GAMES : Path to switch NSP and XCI library on host.
 - $ID : user id to use for credentials
 - $PASSWORD : user password to use for credentials
+- $TIME : Daily run scan time for cron job(0-23)
 
 ## BUGS
 
