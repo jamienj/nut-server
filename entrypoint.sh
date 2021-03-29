@@ -9,3 +9,4 @@ chmod 0644 /etc/cron.d/scraping-nut && crontab /etc/cron.d/scraping-nut
 service cron start
 
 python3 /root/nut.src.latest/nut.py -S >> /var/log/nut.log
+
