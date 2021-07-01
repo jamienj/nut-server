@@ -1,12 +1,13 @@
 # nut-server
 nut server docker image for serving switch nsp and xci to tinfoil on local network
+with daily scan of game directory
 
 ## Quick Start
 
 Pull latest build from docker hub
 
 ```
-docker pull ramdockerapp/nut-server
+docker pull jamienj/nut-server
 ````
 
 Launch the nut-server docker container with the following command:
@@ -19,7 +20,7 @@ docker run -d \
     -e ID=$ID \
     -e PASSWORD=$PASSWORD \
     -e TIME=$TIME \
-    ramdockerapp/nut-server
+    jamienj/nut-server
 ```
 
 Where:
